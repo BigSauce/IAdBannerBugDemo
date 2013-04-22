@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  TestTableViewController.h
 //  IAdBannerTest
 //
 //  Created by Alejandro Vargas on 4/22/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface TestTableViewController : UITableViewController
 
 @end
