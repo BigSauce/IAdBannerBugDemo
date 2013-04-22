@@ -2,8 +2,8 @@
 //  main.m
 //  IAdBannerTest
 //
-//  Created by Alejandro Vargas on 4/22/13.
-//  Copyright (c) 2013 Big Sauce. All rights reserved.
+//  Created by Big Sauce on 4/22/13.
+//  This source code is Open Source.
 //
 
 #import <UIKit/UIKit.h>

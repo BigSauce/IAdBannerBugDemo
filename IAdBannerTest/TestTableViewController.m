@@ -2,17 +2,25 @@
 //  TestTableViewController.m
 //  IAdBannerTest
 //
-//  Created by Alejandro Vargas on 4/22/13.
-//  Copyright (c) 2013 Big Sauce. All rights reserved.
+//  Created by Big Sauce on 4/22/13.
+//  This source code is Open Source.
 //
 
 #import "TestTableViewController.h"
+
+// screen dimensions
+#define SCREEN_LENGTH_X  ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT_Y  ([[UIScreen mainScreen] bounds].size.height)
+
+#define STATUS_BAR_HEIGHT ([UIApplication sharedApplication].statusBarFrame.size.height)
 
 @interface TestTableViewController ()
 
 @end
 
 @implementation TestTableViewController
+
+@synthesize adBanner;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,12 +34,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,82 +42,66 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*  uncomment viewWillLayoutSubviews to fix AdBannerView issue!
+- (void)viewWillLayoutSubviews {
+    
+    [super viewWillLayoutSubviews];
+    [self layoutAdBanner];
+}
+ */
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+    return [super tableView:tableView cellForRowAtIndexPath:indexPath];
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    [self layoutAdBanner];
+}
+
+- (void) layoutAdBanner {
+    
+    // frames of the content (tableview) and banner
+    CGRect contentFrame = self.view.bounds;
+    CGRect bannerFrame = self.adBanner.frame;
+    
+    // by default, content will take up all available space in current tab
+    contentFrame.size.height = SCREEN_HEIGHT_Y - self.tabBarController.tabBar.frame.size.height - STATUS_BAR_HEIGHT;
+    
+    contentFrame.size.height -=  adBanner.frame.size.height;
+    
+    //content frame immediately underneath status bar
+    contentFrame.origin.y = 0;
+    
+    
+    // banner at bottom of content frame
+    bannerFrame = CGRectMake(bannerFrame.origin.x, contentFrame.size.height, bannerFrame.size.width, bannerFrame.size.height);
+    
+    // move tableview to presenting location - no animation
+    self.tableView.frame = contentFrame;
+    
+    // move ad banner to presenting location, and fade in
+    adBanner.frame = bannerFrame;
+    
+    // remove and re-add AdBannerView
+    [self.adBanner removeFromSuperview];
+    [[self.tableView superview] addSubview:self.adBanner];
 }
 
 @end

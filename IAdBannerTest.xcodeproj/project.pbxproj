@@ -18,12 +18,9 @@
 		FAB7708717257E630073CE9C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB7708617257E630073CE9C /* Default-568h@2x.png */; };
 		FAB7708A17257E630073CE9C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB7708817257E630073CE9C /* MainStoryboard_iPhone.storyboard */; };
 		FAB7708D17257E630073CE9C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB7708B17257E630073CE9C /* MainStoryboard_iPad.storyboard */; };
-		FAB7709017257E630073CE9C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB7708F17257E630073CE9C /* FirstViewController.m */; };
-		FAB7709217257E630073CE9C /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB7709117257E630073CE9C /* first.png */; };
-		FAB7709417257E630073CE9C /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB7709317257E630073CE9C /* first@2x.png */; };
-		FAB7709717257E630073CE9C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB7709617257E630073CE9C /* SecondViewController.m */; };
-		FAB7709917257E630073CE9C /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB7709817257E630073CE9C /* second.png */; };
-		FAB7709B17257E630073CE9C /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB7709A17257E630073CE9C /* second@2x.png */; };
+		FAB770A2172582120073CE9C /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB770A1172582120073CE9C /* iAd.framework */; };
+		FAB770A7172586710073CE9C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB770A6172586710073CE9C /* MessageUI.framework */; };
+		FAB770AA1725BB870073CE9C /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB770A91725BB870073CE9C /* TestTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,14 +39,10 @@
 		FAB7708617257E630073CE9C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FAB7708917257E630073CE9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		FAB7708C17257E630073CE9C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		FAB7708E17257E630073CE9C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		FAB7708F17257E630073CE9C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		FAB7709117257E630073CE9C /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		FAB7709317257E630073CE9C /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		FAB7709517257E630073CE9C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		FAB7709617257E630073CE9C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		FAB7709817257E630073CE9C /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		FAB7709A17257E630073CE9C /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		FAB770A1172582120073CE9C /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		FAB770A6172586710073CE9C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		FAB770A81725BB870073CE9C /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		FAB770A91725BB870073CE9C /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB770A7172586710073CE9C /* MessageUI.framework in Frameworks */,
+				FAB770A2172582120073CE9C /* iAd.framework in Frameworks */,
 				FAB7707117257E620073CE9C /* UIKit.framework in Frameworks */,
 				FAB7707317257E620073CE9C /* Foundation.framework in Frameworks */,
 				FAB7707517257E620073CE9C /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +84,8 @@
 				FAB7707017257E620073CE9C /* UIKit.framework */,
 				FAB7707217257E620073CE9C /* Foundation.framework */,
 				FAB7707417257E620073CE9C /* CoreGraphics.framework */,
+				FAB770A6172586710073CE9C /* MessageUI.framework */,
+				FAB770A1172582120073CE9C /* iAd.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,15 +97,9 @@
 				FAB7708017257E630073CE9C /* AppDelegate.m */,
 				FAB7708817257E630073CE9C /* MainStoryboard_iPhone.storyboard */,
 				FAB7708B17257E630073CE9C /* MainStoryboard_iPad.storyboard */,
-				FAB7708E17257E630073CE9C /* FirstViewController.h */,
-				FAB7708F17257E630073CE9C /* FirstViewController.m */,
-				FAB7709117257E630073CE9C /* first.png */,
-				FAB7709317257E630073CE9C /* first@2x.png */,
-				FAB7709517257E630073CE9C /* SecondViewController.h */,
-				FAB7709617257E630073CE9C /* SecondViewController.m */,
-				FAB7709817257E630073CE9C /* second.png */,
-				FAB7709A17257E630073CE9C /* second@2x.png */,
 				FAB7707717257E630073CE9C /* Supporting Files */,
+				FAB770A81725BB870073CE9C /* TestTableViewController.h */,
+				FAB770A91725BB870073CE9C /* TestTableViewController.m */,
 			);
 			path = IAdBannerTest;
 			sourceTree = "<group>";
@@ -184,10 +175,6 @@
 				FAB7708717257E630073CE9C /* Default-568h@2x.png in Resources */,
 				FAB7708A17257E630073CE9C /* MainStoryboard_iPhone.storyboard in Resources */,
 				FAB7708D17257E630073CE9C /* MainStoryboard_iPad.storyboard in Resources */,
-				FAB7709217257E630073CE9C /* first.png in Resources */,
-				FAB7709417257E630073CE9C /* first@2x.png in Resources */,
-				FAB7709917257E630073CE9C /* second.png in Resources */,
-				FAB7709B17257E630073CE9C /* second@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,8 +187,7 @@
 			files = (
 				FAB7707D17257E630073CE9C /* main.m in Sources */,
 				FAB7708117257E630073CE9C /* AppDelegate.m in Sources */,
-				FAB7709017257E630073CE9C /* FirstViewController.m in Sources */,
-				FAB7709717257E630073CE9C /* SecondViewController.m in Sources */,
+				FAB770AA1725BB870073CE9C /* TestTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +320,7 @@
 				FAB770A017257E630073CE9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
