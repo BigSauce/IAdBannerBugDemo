@@ -24,14 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FAB7706D17257E620073CE9C /* IAdBannerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IAdBannerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB7706D17257E620073CE9C /* IAdBannerBugDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IAdBannerBugDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB7707017257E620073CE9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FAB7707217257E620073CE9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAB7707417257E620073CE9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FAB7707817257E630073CE9C /* IAdBannerTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IAdBannerTest-Info.plist"; sourceTree = "<group>"; };
+		FAB7707817257E630073CE9C /* IAdBannerBugDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IAdBannerBugDemo-Info.plist"; sourceTree = "<group>"; };
 		FAB7707A17257E630073CE9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAB7707C17257E630073CE9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FAB7707E17257E630073CE9C /* IAdBannerTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IAdBannerTest-Prefix.pch"; sourceTree = "<group>"; };
+		FAB7707E17257E630073CE9C /* IAdBannerBugDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IAdBannerBugDemo-Prefix.pch"; sourceTree = "<group>"; };
 		FAB7707F17257E630073CE9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAB7708017257E630073CE9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FAB7708217257E630073CE9C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		FAB7706E17257E620073CE9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAB7706D17257E620073CE9C /* IAdBannerTest.app */,
+				FAB7706D17257E620073CE9C /* IAdBannerBugDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,10 +107,10 @@
 		FAB7707717257E630073CE9C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FAB7707817257E630073CE9C /* IAdBannerTest-Info.plist */,
+				FAB7707817257E630073CE9C /* IAdBannerBugDemo-Info.plist */,
 				FAB7707917257E630073CE9C /* InfoPlist.strings */,
 				FAB7707C17257E630073CE9C /* main.m */,
-				FAB7707E17257E630073CE9C /* IAdBannerTest-Prefix.pch */,
+				FAB7707E17257E630073CE9C /* IAdBannerBugDemo-Prefix.pch */,
 				FAB7708217257E630073CE9C /* Default.png */,
 				FAB7708417257E630073CE9C /* Default@2x.png */,
 				FAB7708617257E630073CE9C /* Default-568h@2x.png */,
@@ -121,9 +121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FAB7706C17257E620073CE9C /* IAdBannerTest */ = {
+		FAB7706C17257E620073CE9C /* IAdBannerBugDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAB7709E17257E630073CE9C /* Build configuration list for PBXNativeTarget "IAdBannerTest" */;
+			buildConfigurationList = FAB7709E17257E630073CE9C /* Build configuration list for PBXNativeTarget "IAdBannerBugDemo" */;
 			buildPhases = (
 				FAB7706917257E620073CE9C /* Sources */,
 				FAB7706A17257E620073CE9C /* Frameworks */,
@@ -133,9 +133,9 @@
 			);
 			dependencies = (
 			);
-			name = IAdBannerTest;
+			name = IAdBannerBugDemo;
 			productName = IAdBannerTest;
-			productReference = FAB7706D17257E620073CE9C /* IAdBannerTest.app */;
+			productReference = FAB7706D17257E620073CE9C /* IAdBannerBugDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -147,7 +147,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Big Sauce";
 			};
-			buildConfigurationList = FAB7706817257E620073CE9C /* Build configuration list for PBXProject "IAdBannerTest" */;
+			buildConfigurationList = FAB7706817257E620073CE9C /* Build configuration list for PBXProject "IAdBannerBugDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -159,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FAB7706C17257E620073CE9C /* IAdBannerTest */,
+				FAB7706C17257E620073CE9C /* IAdBannerBugDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -283,9 +283,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IAdBannerTest/IAdBannerTest-Prefix.pch";
-				INFOPLIST_FILE = "IAdBannerTest/IAdBannerTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "IAdBannerTest/IAdBannerBugDemo-Prefix.pch";
+				INFOPLIST_FILE = "IAdBannerTest/IAdBannerBugDemo-Info.plist";
+				PRODUCT_NAME = IAdBannerBugDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -294,9 +294,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IAdBannerTest/IAdBannerTest-Prefix.pch";
-				INFOPLIST_FILE = "IAdBannerTest/IAdBannerTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "IAdBannerTest/IAdBannerBugDemo-Prefix.pch";
+				INFOPLIST_FILE = "IAdBannerTest/IAdBannerBugDemo-Info.plist";
+				PRODUCT_NAME = IAdBannerBugDemo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -304,7 +304,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAB7706817257E620073CE9C /* Build configuration list for PBXProject "IAdBannerTest" */ = {
+		FAB7706817257E620073CE9C /* Build configuration list for PBXProject "IAdBannerBugDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAB7709C17257E630073CE9C /* Debug */,
@@ -313,7 +313,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAB7709E17257E630073CE9C /* Build configuration list for PBXNativeTarget "IAdBannerTest" */ = {
+		FAB7709E17257E630073CE9C /* Build configuration list for PBXNativeTarget "IAdBannerBugDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAB7709F17257E630073CE9C /* Debug */,
